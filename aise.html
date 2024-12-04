@@ -1,0 +1,231 @@
+Edit
+Copy code
+<html>
+ <head>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex">
+   <!-- Sidebar -->
+   <div class="w-1/5 bg-black text-white min-h-screen">
+    <div class="flex flex-col items-center py-6">
+     <img alt="Admin profile picture" class="rounded-full mb-4" height="100" src="https://storage.googleapis.com/a1aa/image/iTUefUAAAjuWmkqJXIWKUV7ReNB708c6kDT73NodyMcTeTedC.jpg" width="100"/>
+     <h2 class="text-2xl text-red-500">
+      Admin
+     </h2>
+    </div>
+    <nav class="mt-10">
+     <ul>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-tachometer-alt mr-3">
+       </i>
+       <span>
+        Dashboard
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-balance-scale mr-3">
+       </i>
+       <span>
+        Invoice
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-handshake mr-3">
+       </i>
+       <span>
+        Customer
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-capsules mr-3">
+       </i>
+       <span>
+        Medicine
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-users mr-3">
+       </i>
+       <span>
+        Supplier
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-chart-bar mr-3">
+       </i>
+       <span>
+        Purchase
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-file-alt mr-3">
+       </i>
+       <span>
+        Report
+       </span>
+      </li>
+      <li class="flex items-center px-6 py-3 hover:bg-gray-700">
+       <i class="fas fa-search mr-3">
+       </i>
+       <span>
+        Search
+       </span>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="w-4/5 p-6">
+    <div class="flex justify-between items-center mb-6">
+     <h1 class="text-3xl font-bold">
+      Dashboard
+     </h1>
+     <i class="fas fa-cog text-red-500 text-2xl">
+     </i>
+    </div>
+    <div class="mb-6">
+     <h2 class="text-xl font-bold">
+      Home
+     </h2>
+     <hr class="border-t-2 border-red-500 mt-2"/>
+    </div>
+    <div class="grid grid-cols-3 gap-4 mb-6">
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        24
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Total Customer
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        6
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Total Supplier
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        13
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Total Medicine
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        0
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Out of Stock
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        0
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Expired
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-blue-300 rounded-lg">
+      <div class="flex items-center">
+       <span class="text-3xl font-bold mr-2">
+        0
+       </span>
+       <i class="fas fa-exclamation-triangle text-yellow-500">
+       </i>
+      </div>
+      <p>
+       Total Invoice
+      </p>
+     </div>
+     <div class="bg-white p-4 border border-red-300 rounded-lg col-span-3">
+      <h3 class="text-lg font-bold mb-2">
+       Todays Report
+      </h3>
+      <table class="w-full">
+       <tr>
+        <td class="py-2">
+         Total Sales
+        </td>
+        <td class="py-2 text-green-500">
+         Rs. 0
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2">
+         Total Purchase
+        </td>
+        <td class="py-2 text-red-500">
+         Rs. 0
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <hr class="border-t-2 border-red-500 mb-6"/>
+    <div class="grid grid-cols-4 gap-4">
+     <div class="bg-white p-6 border border-blue-300 rounded-lg flex flex-col items-center">
+      <i class="fas fa-id-card text-4xl mb-4">
+      </i>
+      <p>
+       Create New Invoice
+      </p>
+     </div>
+     <div class="bg-white p-6 border border-blue-300 rounded-lg flex flex-col items-center">
+      <i class="fas fa-handshake text-4xl mb-4">
+      </i>
+      <p>
+       Add New Customer
+      </p>
+     </div>
+     <div class="bg-white p-6 border border-blue-300 rounded-lg flex flex-col items-center">
+      <i class="fas fa-shopping-bag text-4xl mb-4">
+      </i>
+      <p>
+       Add New Medicine
+      </p>
+     </div>
+     <div class="bg-white p-6 border border-blue-300 rounded-lg flex flex-col items-center">
+      <i class="fas fa-users text-4xl mb-4">
+      </i>
+      <p>
+       Add New Supplier
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
