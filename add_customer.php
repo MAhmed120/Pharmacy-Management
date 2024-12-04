@@ -28,7 +28,8 @@
         <div class="row">
           <div class="row col col-md-6">
             <?php
-              // form content
+              // form content is thhis
+              // one more comment 
               require "sections/add_new_customer.html";
             ?>
           </div>
